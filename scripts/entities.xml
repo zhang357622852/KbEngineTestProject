@@ -10,4 +10,6 @@
 	
 	<!--测试-->
 	<FirstEntity hasCell="true"></FirstEntity>
+
+	<Scene></Scene>
 </root>
