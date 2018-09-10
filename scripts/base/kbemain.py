@@ -13,6 +13,12 @@ def onBaseAppReady(isBootstrap):
 	INFO_MSG('onBaseAppReady: isBootstrap=%s, appID=%s, bootstrapGroupIndex=%s, bootstrapGlobalIndex=%s' % \
 	 (isBootstrap, os.getenv("KBE_COMPONENTID"), os.getenv("KBE_BOOTIDX_GROUP"), os.getenv("KBE_BOOTIDX_GLOBAL")))
 
+	# 创建FirstEntity
+	props = {
+		"name" : "MyFirstEntity"
+	}
+	KBEngine.createEntityLocally("FirstEntity", props)
+
 def onReadyForLogin(isBootstrap):
 	"""
 	KBEngine method.
