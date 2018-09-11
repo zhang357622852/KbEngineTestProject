@@ -18,5 +18,19 @@
             <!--hello的内容-->
             <Arg>   UNICODE         </Arg>
         </hello>
+
+        <createCell>
+            <!--场景的CELL ENTITYCALL-->
+            <Arg>   ENTITYCALL      </Arg>
+        </createCell>
     </BaseMethods>
+
+    <CellMethods>
+        <hello>
+            <!--该参数可以让此方法暴露给客户端调用-->
+            <Exposed/>
+            <!--hello的内容-->
+            <Arg>   UNICODE         </Arg>
+        </hello>
+    </CellMethods>
 </root>

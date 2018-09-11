@@ -15,6 +15,16 @@ class Scene(KBEngine.Entity):
         # 参数cellappIndex为None，表示由引擎负载均衡进行动态选择
         self.createCellEntityInNewSpace(None)
 
+    def onGetCell(self):
+        """
+        entity的cell部分被创建成功
+        """
+        props = {
+            "name": "MyFirstEntity"
+        }
+        entity = KBEngine.createEntityLocally("FirstEntity", props)
+        self.loginToScene(entity)
+
    	def loginToScene(self, entityCall):
         """
         某个Entity请求登录到该场景
