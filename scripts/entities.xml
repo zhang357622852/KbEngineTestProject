@@ -9,7 +9,9 @@
 	<Account hasClient="true"></Account><!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
 	
 	<!--测试-->
-	<FirstEntity hasCell="true"></FirstEntity>
+	<FirstEntity hasClient="true"></FirstEntity>
 
+	<!--测试
 	<Scene></Scene>
+	-->
 </root>

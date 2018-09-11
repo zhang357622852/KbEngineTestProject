@@ -10,10 +10,8 @@ class FirstEntity(KBEngine.Entity):
 	def __init__(self):
 		KBEngine.Entity.__init__(self)
 
-
 	def hello(self, content):
 		"""
 		hello 方法
 		"""
 		INFO_MSG("Hello ComblockEngine! I'm %s. I got your content=%s" % (self.name, content))
-		
